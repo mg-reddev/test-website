@@ -67,6 +67,11 @@ p{
     height: 15rem;
     padding-right: 2rem;
     border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.card-mine img:hover {
+    transform: scale(1.02);
 }
 
 .card-mine .text{
