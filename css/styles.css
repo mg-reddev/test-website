@@ -147,6 +147,54 @@ p {
     gap: 0.8rem;
 }
 
+.dialogForm {
+    width: 50%;
+    margin: 1rem;
+    display: none;
+    flex-direction: column; /* Imposta l'impilamento verticale */
+    background-color: #CDC2A5;
+    border-radius: 10px;
+    padding: 1rem; /* Aggiunge spazio interno */
+    gap: 1rem; /* Spaziatura tra i campi */
+}
+
+.dialogForm form {
+    display: flex;
+    flex-direction: column; /* Impila verticalmente gli elementi nel form */
+    gap: 0.5rem; /* Spaziatura tra i campi del form */
+}
+
+.dialogForm label{
+    color: white;
+    font-weight: bold;
+    font-family: 'Char', sans-serif;
+}
+
+.dialogForm input, .dialogForm textarea, .dialogForm button {
+    width: 100%; /* Fa sì che ogni campo occupi tutta la larghezza */
+    box-sizing: border-box; /* Include padding e bordi nella larghezza */
+    padding: 0.5rem; /* Aggiunge spazio interno agli input */
+}
+
+input::placeholder, textarea::placeholder {
+    /* Stile comune per tutti i browser moderni */
+    font-family: 'Char', sans-serif;
+    font-size: 14px;
+    color: lightgray;
+}
+
+.dialogForm button {
+    background-color: #295F98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dialogForm button:hover {
+    background-color: #45a049;
+}
+
 @media (max-width: 863px) {
     .img2 {
         display: none;
