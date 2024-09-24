@@ -1,5 +1,11 @@
 body{
     margin: 0;
+    background-color: #E1D7C6;
+}
+
+p{
+    font-size: 0.8rem;
+    margin: 0;
 }
 
 @font-face {
@@ -8,7 +14,7 @@ body{
 }
 
 .head-container{
-    background-color: rgb(47, 41, 41);
+    background-color: #295F98;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -34,18 +40,91 @@ body{
     font-family: 'Char', sans-serif;
 }
 
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-menu a:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .card-mine{
-    background-color: black;
+    background-color: #CDC2A5;
     display: flex;
     color: white;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+    height: 20rem;
+    margin-bottom: 2rem;
 }
 
 .card-mine img{
     height: 15rem;
     padding-right: 2rem;
+    border-radius: 50%;
+}
+
+.card-mine .text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.card-mine .text h1{
+    margin-bottom: 0rem;
+    color: #ffffff;
+}
+
+.card-mine .text p{
+    font-weight: bold;
+    font-size: 0.8;
+}
+
+.discover {
+    display: flex;
+    background-color: #295F98;
+    height: 2rem;
+    width: 7rem;
+    border-radius: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.discover a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.discover a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #295F98;
+    height: 10rem;
+    font-family: 'Char', sans-serif;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-container .social{
+    display: flex;
+    gap: 0.8rem;
 }
