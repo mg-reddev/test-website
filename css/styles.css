@@ -1,9 +1,10 @@
-body{
+body {
     margin: 0;
     background-color: #E1D7C6;
+    font-family: 'Work Sans', sans-serif;
 }
 
-p{
+p {
     font-size: 0.8rem;
     margin: 0;
 }
@@ -13,94 +14,102 @@ p{
     src: url(fonts/WorkSans-VariableFont_wght.ttf);
 }
 
-.head-container{
+.head-container {
     background-color: #295F98;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 6rem;
+    padding: 0 1.5rem;
 }
 
-.head-container *{
+.head-container * {
     margin: 0.2rem;
 }
 
-.head-container .agency{
+.head-container .agency {
     display: flex;
     align-items: center;
 }
 
-.head-container img{
+.head-container img {
     height: 2.8rem;
 }
 
-.head-container a{
+.head-container a {
     text-decoration: none;
     color: white;
     font-family: 'Char', sans-serif;
 }
 
+.head-container a:hover{
+    color: lightgray;
+}
+
 .navbar-menu a {
     text-decoration: none;
     color: white;
+    transition: color 0.3s ease;
 }
 
 .navbar-menu a:hover {
-    color: white;
-    text-decoration: none;
+    color: lightgray;
 }
 
-.card-mine{
+.card-mine {
     background-color: #CDC2A5;
     display: flex;
+    flex-direction: row;
     color: white;
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 2rem 1rem;
     padding: 2rem;
     border-radius: 0.5rem;
-    height: 20rem;
-    margin-bottom: 2rem;
+    height: auto;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.card-mine img{
+.card-mine img {
     height: 15rem;
+    object-fit: cover;
     padding-right: 2rem;
     border-radius: 50%;
     transition: transform 0.5s ease;
 }
 
-.card-mine img:hover {
-    transform: scale(1.02);
-}
-
-.card-mine .text{
+.card-mine .text {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
 }
 
-.card-mine .text h1{
-    margin-bottom: 0rem;
+.card-mine .text h1 {
+    margin-bottom: 0;
     color: #ffffff;
 }
 
-.card-mine .text p{
+.card-mine .text p {
     font-weight: bold;
-    font-size: 0.8;
+    font-size: 0.9rem;
 }
 
 .discover {
-    display: flex;
+    display: inline-flex;
     background-color: #295F98;
     height: 2rem;
-    width: 7rem;
+    width: 4rem;
     border-radius: 0.3rem;
     justify-content: center;
     align-items: center;
     color: white;
     margin: 0;
     font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.discover:hover {
+    background-color: #1F4B78;
 }
 
 .discover a {
@@ -109,11 +118,10 @@ p{
 }
 
 .discover a:hover {
-    text-decoration: none;
     color: inherit;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     flex-direction: column;
     background-color: #295F98;
@@ -124,12 +132,63 @@ p{
     align-items: center;
 }
 
-.footer-container a{
+.footer-container a {
     text-decoration: none;
     color: white;
+    transition: color 0.3s ease;
 }
 
-.footer-container .social{
+.footer-container a:hover {
+    color: lightgray;
+}
+
+.footer-container .social {
     display: flex;
     gap: 0.8rem;
+}
+
+@media (max-width: 863px) {
+    .img2 {
+        display: none;
+    }
+
+    .card-mine {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .card-mine .img1 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .head-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .custom-order-1{
+        order: 1;
+    }
+    
+    .custom-order-2{
+        order: 2;
+    }
+    
+    .custom-order-3{
+        order: 3;
+    }
+}
+
+@media (min-width: 863px){
+    .card-mine:hover {
+        transform: translateY(-5px);
+    }
+
+    .card-mine img:hover {
+        transform: scale(1.05);
+    }
 }
