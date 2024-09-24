@@ -184,6 +184,11 @@ p {
 }
 
 @media (min-width: 863px){
+    p{
+        margin-right: 1rem;
+        text-align: justify;       
+    }
+
     .card-mine:hover {
         transform: translateY(-5px);
     }
